@@ -1,7 +1,3 @@
-/**
- * Created by chenxuan on 2018/1/19.
- */
-
 var webpack = require('webpack');
 var config = require('./webpack.base.config');
 var HtmlWebpackPlugin = require('html-webpack-plugin');

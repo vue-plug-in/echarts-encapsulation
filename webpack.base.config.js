@@ -1,7 +1,3 @@
-/**
- * Created by chenxuan on 2018/1/19.
- */
-
 var path = require('path');
 var ExtractTextPlugin = require('extract-text-webpack-plugin');
 
