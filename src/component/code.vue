@@ -36,13 +36,13 @@
         <pre :class="{bg: bg}"><code :class="language" ref="code"><slot></slot></code></pre>
         <span class="scale" @click="scale">
             <Tooltip :content="'全屏'" placement="top" transfer>
-                <Icon type="qr-scanner" size="18"></Icon>
+                <Icon type="qr-scanner" size="22"></Icon>
             </Tooltip>
         </span>
         <span class="copy" @click="clip">
             <Tooltip :content="'复制'" placement="top" transfer>
-                <Icon type="clipboard" size="18" v-show="!copied"></Icon>
-                <Icon type="checkmark" size="18" v-show="copied" style="color:#5cb85c"></Icon>
+                <Icon type="clipboard" size="22" v-show="!copied"></Icon>
+                <Icon type="checkmark" size="22" v-show="copied" style="color:#5cb85c"></Icon>
             </Tooltip>
         </span>
         <Modal class-name="code-scale-modal" :title="title" width="65" v-model="openScale">

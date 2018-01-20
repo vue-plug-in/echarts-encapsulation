@@ -55,6 +55,8 @@ module.exports = {
       {
         test: /\.css$/,
         use: ExtractTextPlugin.extract({
+          //生产环境忽略了10k以上图片背景图的路径问题，出现404
+          publicPath: '../', // 注意配置这一部分，根据目录结构自由调整
           use: 'css-loader?minimize',
           fallback: 'style-loader'
         })

@@ -1,5 +1,8 @@
 <style lang="scss">
     @import '../style/demo';
+    .example-code-more i {
+        font-size: 25px;
+    }
 </style>
 <template>
     <Row class="example" :class="{'example-vertical': vertical}" :id="title">
