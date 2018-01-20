@@ -2,9 +2,8 @@ var path = require('path');
 var ExtractTextPlugin = require('extract-text-webpack-plugin');
 
 function resolve (dir) {
-  return path.join(__dirname, '..', dir)
+  return path.join(__dirname, dir)
 }
-
 module.exports = {
   entry: {
     main: './src/main',
@@ -79,10 +78,11 @@ module.exports = {
     ]
   },
   resolve: {
-    extensions: ['.js', '.vue'],
+    extensions: ['.js', '.vue', '.json'],
     alias: {
       'hljs': 'highlightjs/highlight.pack.js',
-      'vue': 'vue/dist/vue.runtime.js'
+      'views': resolve('src/views'),
+      'libs': resolve('src/libs')
     }
   }
 };
