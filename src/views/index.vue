@@ -25,20 +25,12 @@
 
 <script>
   import {init, timer} from '../js/initThree'
+  import {indexList} from '../data-manage/data'
 
   export default {
     data () {
       return {
-        list: [{
-          name: '介绍',
-          link: '/introduce'
-        }, {
-          name: 'example',
-          link: '/example'
-        }, {
-          name: '文档',
-          link: '/document'
-        }]
+        list: indexList
       }
     },
     methods: {},
