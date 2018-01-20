@@ -4,7 +4,7 @@
     </div>
 </template>
 <style lang="scss">
-
+    @import "style/common.css";
 </style>
 <script>
   export default {

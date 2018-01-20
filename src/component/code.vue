@@ -24,8 +24,6 @@
     span.copy:hover, span.scale:hover, span.open-fiddle:hover{
         color: #5c6b77;
     }
-</style>
-<style>
     .code-scale-modal .ivu-modal-body{
         background-color: #f7f7f7;
     }
@@ -53,9 +51,9 @@
     </div>
 </template>
 <script>
-    import hljs from 'hljs';
-    import Clipboard from 'clipboard';
-    import tag_map from './tag-map';
+    import hljs from 'hljs'
+    import Clipboard from 'clipboard'
+    import tag_map from './tag-map'
 
     function replaceTag(source, tagMap) {
         Object.keys(tagMap).forEach(i => {
@@ -98,11 +96,12 @@
         mounted () {
             this.code = this.$refs.code.innerHTML.replace(/\n/, '');
             this.$refs.code.innerHTML = this.code;
-            hljs.highlightBlock(this.$refs.code);
 
+            hljs.highlightBlock(this.$refs.code);
+            console.log(hljs.highlightBlock)
             this.$refs.code2.innerHTML = this.code;
             hljs.highlightBlock(this.$refs.code2);
-
+``
             const Demo = this.$parent.$parent.$parent;
             if (Demo.$options.name === 'Demo') {
                 this.title = Demo.title;

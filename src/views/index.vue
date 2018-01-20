@@ -4,7 +4,7 @@
             <div class="bg"><span></span></div>
             <Row type="flex" justify="center" align="middle" style="position: relative;z-index: 3">
                 <Col span="24">
-                <h2>echart</h2>
+                <h2><img src="../img/logo.png" width="445"></h2>
                 <div class="list">
                     <router-link :to="item.link" v-for="(item,index) in list" :key="index">{{item.name}}</router-link>
                     <a href="https://github.com/vue-plug-in/echarts-encapsulation" target="_blank">
