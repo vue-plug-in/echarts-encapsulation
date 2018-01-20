@@ -8,7 +8,7 @@
                 <i-select
                         ref="select"
                         v-model="search"
-                        filterabless
+                        filterable
                         :placeholder="searchText"
                         :not-found-text="notFoundText"
                         @on-change="handleSearch">
